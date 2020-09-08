@@ -1,0 +1,247 @@
+/* Start of Header */
+#header {
+  position: sticky; 
+  top:0;
+  background-color:#102e6e;
+
+  padding: 0vh 15%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1;
+}
+
+#profileName {
+  color:white;
+  margin: 0%, 1%;
+}
+
+body {
+  margin: 0%;
+  background-color:rgb(202, 202, 202);
+  font-family: 'Muli';
+  font-size: 22px;
+}
+
+.userInfo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height:4vh;
+}
+
+#loginButton {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height:2em;
+}
+
+#logo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 5vh;
+}
+
+/* End of Header */
+
+/* Start of Filters */
+#slotAndOrder{
+  display: flex;
+  justify-content: center;
+}
+#slots,
+#ordering{
+  margin: 0% 2%;
+}
+
+/* Make buttons responsive to hover*/
+.slotIcon,
+.orderIcon,
+.classIcon {
+  width: 6em;
+  height: 6em;
+  margin: 0.1vw;
+  background-color: rgb(161, 252, 199);
+  transition: all .2s ease-in-out;
+}
+
+/* buttons pop out and turn green on hover */
+.orderIcon:hover,
+.classIcon:hover,
+.slotIcon:hover {
+  transform: scale(1.09); 
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+#classes {
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+/* End of Filters */
+
+.itemImage{
+  width:200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+#pageNumContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2% 0% 2% 0%;
+}
+
+.pageNum {
+  background-color: white;
+  border: 2px solid #102e6e;
+  color: #102e6e;
+  width: 3.8em;
+  height: 2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0.2vw;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.pageNum:hover{
+  background-color: #102e6e;
+  color: white;
+}
+
+#loading {
+  display: flex;
+  justify-content: center;
+  margin: 5vh 0vw 5vh 0vw;
+}
+
+#loading *{
+  text-align: center;
+}
+
+#pageBodyContainer{
+  margin: 0;
+  padding: 0;
+}
+
+#pageBody {
+  margin: 0% 10% 0% 10%;
+  padding:0% 1% 0% 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+
+.pageBody > div {
+  height: 18vw;
+  width: 15vw;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.itemNameContainer{
+  background-color: #102e6e;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.itembodyContainer{
+  background-color: rgb(173, 197, 221);
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.itemname {
+  text-align: center;
+  color: white;
+}
+
+.itemContainer {
+  flex: 0 1 10%;
+  margin: 1vh 1.5vw 2vh 1.5vw;
+  width: 15em;
+  height: 18em;
+  justify-content: center;
+  margin-right: auto;
+  border: 2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.yourRating {
+  margin: 0% 0% 0.5% 0%;
+}
+
+/* Rating Button Styling */
+div > button {
+  text-align:center;
+}
+.buttonContainer {
+  margin: 0;
+}
+
+.buttonContainer > button{
+  width: 3em !important;
+  height: 2em !important;
+  border: 2px solid #102e6e;
+  border-radius: 5px;
+}
+.buttonContainer:hover >  button{
+  background-color: yellow !important;
+}
+.buttonContainer > button:hover{
+  background-color: yellow !important;
+}
+.buttonContainer > button:hover ~ button{
+  background-color: white !important;
+}
+
+/*Tablet Friendly Adjustments*/
+@media only screen and (max-width: 1800px) {
+  #pageBody {
+    margin: 0% 1% 0% 1%;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .slotIcon,
+  .orderIcon,
+  .classIcon {
+    width: 5em;
+    height: 5em;
+    margin: 0.1vw;
+    background-color: rgb(161, 252, 199);
+    transition: all .2s ease-in-out;
+  }
+  #loginButton {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height:1.5em;
+  }
+
+}
+/* minor mobile friendly adjustments */
+/* Should reorganize layout with a drop down menu when possible*/
+@media only screen and (max-width: 600px) {
+  #header {
+    padding: 0%;
+    justify-content: center;
+  }
+}
