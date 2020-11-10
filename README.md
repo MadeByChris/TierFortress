@@ -7,7 +7,7 @@ Tier Fortress is a browser based web application which allows users to rank the 
 
 This Project Demonstrates:
 * Designing and Implementing a relational SQL satabase
-* Performing asynchronous AJAX calls and database queries
+* Performing AJAX calls and database queries
 * Implementing SteamAuthentication API to persist user data
 * Styling and formatting for mobile, tablet, and PC friendliness
 * Responsive design 
